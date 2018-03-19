@@ -1,0 +1,2 @@
+select urunler.id,urunler.isim,urunler.kategori,urunler.fiyat 
+from urun_adisyon inner join urunler on urun_adisyon.urun_id=urunler.id
