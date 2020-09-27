@@ -253,12 +253,15 @@ public class Database {
                 stmt.setInt(2, adisyonId);
                 int ret=stmt.executeUpdate(); 
                 disconnect();
+                stmt.close();
                 return ret;
             }
             else{
                 disconnect();
+                stmt.close();
                 return -1;
             }
+
         }
     }
 
